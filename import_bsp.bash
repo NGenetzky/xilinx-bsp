@@ -11,4 +11,5 @@ mkdir -p "${dest}"
 tar -x \
     --strip-components=1 \
     -C "${dest}" \
+    --exclude "*.gitignore" \
     -f "${src}"
